@@ -36,6 +36,9 @@ public class WordFrequencyServiceImpl implements WordFrequencyService {
     
     @Autowired
     private AwsProperties awsProperties;
+
+    @Value("${cloud.aws.region.static}")
+    private String awsRegion;
     
     // Cache to store word frequency results for different files and k values
     private Map<String, Map<Integer, Map<String, Integer>>> cache = new HashMap<>();
@@ -45,7 +48,7 @@ public class WordFrequencyServiceImpl implements WordFrequencyService {
     public void configureAwsSdk() {
         AwsBasicCredentials awsCredentials = AwsBasicCredentials.create(awsProperties.getAccessKey(), awsProperties.getSecretKey());
         s3Client = S3Client.builder()
-        		.region(Region.EU_NORTH_1)
+        		.region(Region.of(awsRegion))  // Set the AWS region
                 .credentialsProvider(StaticCredentialsProvider.create(awsCredentials))
                 .build();
     }

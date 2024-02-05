@@ -23,6 +23,8 @@ Update application.properties with your AWS credentials.
    
    aws.secret-key=<your_secret_key>
 
+   cloud.aws.region.static=<your_region>
+
 ## Run the Application:
 
 Open the application and run it as SpringBoot App using the IDE or else by

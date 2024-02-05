@@ -12,6 +12,7 @@ import java.util.StringTokenizer;
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import com.example.wordfrequency.model.AwsProperties;

@@ -6,7 +6,7 @@ This application calculates the top K most frequent words in a given text file. 
 ## Instructions to Run the Application
 
 ### Prerequisites
-- Java JDK 8 or higher
+- Java JDK 11 or higher
 - Maven
 - AWS S3 Bucket
 
@@ -25,7 +25,10 @@ Update application.properties with your AWS credentials.
 
 ## Run the Application:
 
-Open the application and run it by SpringBoot App using the IDE
+Open the application and run it as SpringBoot App using the IDE or else by
+
+```bash
+   mvn spring-boot:run
 
 ## The application will be accessible at 
 	

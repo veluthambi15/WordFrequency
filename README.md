@@ -13,7 +13,8 @@ This application calculates the top K most frequent words in a given text file. 
 ### Steps
 1. **Clone the Repository:**
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/veluthambi15/WordFrequency.git
+
 Configure AWS Credentials:
 Update application.properties with your AWS credentials.
 

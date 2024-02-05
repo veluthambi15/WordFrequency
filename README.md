@@ -28,10 +28,8 @@ Update application.properties with your AWS credentials.
 
 ## Run the Application:
 
-Open the application and run it as SpringBoot App using the IDE or else by
+Open the application and run it as SpringBoot App using the IDE 
 
-    ```bash
-    mvn spring-boot:run
 
 ## The application will be accessible at 
 	

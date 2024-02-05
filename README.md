@@ -46,7 +46,7 @@ Word Frequency: POST /frequencychecker/frequentwords
    }
 
 ## Run Tests:
-   ```bash
+
    mvn test
 
 ## Time and Space Complexity
